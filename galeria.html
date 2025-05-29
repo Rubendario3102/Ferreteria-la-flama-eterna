@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300..700&display=swap" rel="stylesheet">
+	<title>FERRETERIA-LA FLAMA ETERNA</title>
+</head>
+<body class="bur">
+
+	<header>
+		<h1 class="iuy"> FERRETERIA </h1>
+	</header>
+
+	<nav>
+		<a href="index.html"> INICIO </a><br>
+		<a href="formulario.html"> FORMULARIO </a><br>
+		<a href="galeria.html"> GALERIA </a><br>
+		<a href="quienes.html"> QUIENES SOMOS </a><br>
+	</nav>
+
+	<main> 
+		<section class="fondo">
+			<h2>GALERIA DE PRODUCTOS</h2>
+			<p>Seleccione la categoria del producto</p>
+
+			<form>
+				<table align="center" width="90%" border="0">
+						
+				       <tr>
+				<td>
+					
+					<select name="producto" size="1" id="varFE" onchange="FE()" class="info" > 
+						<option value="seleccion" selected>Seleccionar</option>
+							<option value="jardineria">JARDINERIA</option>
+							<option value="construccion" >CONTRUCCION</option>
+							<option value="hogar">HOGAR</option>
+							
+					</select>
+				</td>
+			</tr>
+			<tr>
+
+				<td>
+					<br><a id="ref1"><img id="img" width="350" height="250" border="black" class="im"></a>
+				</td>
+			</tr>
+			
+		        </table>
+			</form>
+			<br><br>
+			
+		</section>
+	</main>
+	<script type="text/javascript" class="info">
+
+			function FE() {
+            var ins = document.getElementById("varFE").value;
+
+            if (ins === "seleccion") {
+            	document.getElementById("img").src = "img/whitel.jpg";
+           
+
+            
+            } else if (ins === "jardineria") {
+            document.getElementById("img").src = "img/jardin.jpg";
+            document.getElementById("ref1").href="jardin.html";
+            } else if (ins === "construccion") {
+            document.getElementById("img").src = "img/construir.jpg";
+            document.getElementById("ref1").href="construccion.html";
+            }else if (ins === "hogar") {
+            document.getElementById("img").src = "img/hogar.jpg";
+            document.getElementById("ref1").href="casa.html";
+    
+}}
+</script>
+
+	<footer>
+		<p class="whi"> &copy;2025 FERRETERIA - LA FLAMA ETERNA - Todos los derechos reservados.</p>
+		<p>Maestra Alondra Zavala - 2025</p>
+		<p>4A Programacion - Ruben Dario Figueroa Cardenas</p>
+	</footer>
+
+</body>
+</html>

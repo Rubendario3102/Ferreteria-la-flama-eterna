@@ -1,0 +1,297 @@
+body{
+    background-size: cover;
+	background-color: beige;
+	background-repeat: repeat;
+	font-family: verdana;
+}
+
+form.ap{
+	font-size: 28px;
+	font-family: red rose;
+}
+
+img.quii{
+	width: 200%;
+	height: auto;
+}
+
+img.im{
+	border: solid;
+	border-color: orangered;
+	backdrop-filter: invert(80%);
+	
+}
+
+body.bur{
+	background-image: url(../img/fu.gif);
+	background-size: 1000px;
+	background-position-y: 30px;
+	background-position-x: 630px;
+	background-repeat: no-repeat;
+	transition:  1s ease-in;
+}
+
+body.me{
+	background-image: url(../img/BURNING.png);
+	background-size: 1000px;
+	background-position-y: 150px;
+	background-position-x: 650px;
+	background-repeat: no-repeat;
+	transition: 1s ease-in;
+}
+
+.me:hover{
+	background-position-y: 60px ;
+	background-image: url(../img/gifburn.gif);
+
+
+}
+
+header{
+	background-image: url(../img/fore.jpg);
+
+	background-size: cover;
+	background-position-y: 300px;
+	color: black;
+	text-align: center;
+	padding: 5px;
+	font-size: 40px;
+	width: 100%;
+	font-family: red rose;
+}
+
+nav{
+	line-height: 30px;
+	background-color: orangered;
+	color: white;
+	height: 600px;
+	width: 20%;
+	float: left;
+	padding: 5px;
+	font-size: 22px;
+	text-decoration: none;
+	margin: 20px;
+	font-family: red rose;
+
+}
+
+nav a:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+section{
+	width: 750px;
+	float: left;
+	padding: 10px;
+	color: black;
+	text-align: justify;
+	font-size: 20px;
+	padding: 0px 150px 0px 150px;
+}
+
+select{
+	width: 80%;
+	font-size: 15px;
+	font-family: verdana;
+	color: orangered;
+	font-weight: bolder;
+	background-size: cover;
+	background-image: url(../img/buttonfire.jpg);
+}
+
+
+
+footer{
+	background: linear-gradient(beige,blanchedalmond,orange,orangered);
+	color: white;
+    
+	clear: both;
+	text-align: center;
+	padding: 5px;
+	width: 100%;
+	font-weight: bolder;
+	font-family: verdana;
+}
+
+img{
+	display: block;
+	margin: auto;
+	clear: right;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+main .fondo{
+	text-align: center;
+	width: 40%;
+	color: black;
+
+}
+
+main .fondo img{
+	max-width: 80%;
+	height: auto;
+	cursor: pointer;
+	border-radius: 6px;
+	transition: transform 0.3s ease;
+}
+
+main .fondo img:hover{
+	transform: scale(1.05);
+
+
+}
+
+td .ISY{
+	font-size: 10px;
+}
+p.whi{
+	color: darkorange;
+}
+
+button{
+	width: 150%;
+	background-image: url(../img/fire.gif);
+	background-size: cover;
+	background-position-y: 1000px;
+	
+	
+
+	
+	height: 50px;
+	color: orangered;
+	font-size: 20px;
+	font-family: reggae one;
+	transition: transform 0.3s ease-in;
+
+}
+
+button:hover{
+	transform: scale(1.05);
+}
+
+
+
+input.ap{
+	background-image: url(../img/fire.gif);
+	background-size: cover;
+	background-position-y: 1730px;
+	font-family: reggae one;
+	color: white;
+	width: 45%;
+	height: 40px;
+	
+	font-size: 20px;
+	transition: transform 0.3s ease-in;
+
+}
+
+input.ap:hover{
+
+	transform: scale(1.05);
+	color: orangered;
+
+}
+
+button.PÑL{
+	width: 50%;
+	height: 30px;
+	background-position-y: 250px;
+	color: orange;
+}
+
+
+#alert-dialog {
+  opacity: 0;
+  transition:
+    display 1s allow-discrete,
+    overlay 1s allow-discrete,
+    translate 1s,
+    opacity 1s;
+  translate: 0 50%;
+  will-change: translate, opacity;
+}
+
+#alert-dialog[open] {
+  opacity: 1;
+  translate: 0;
+  @starting-style {
+    opacity: 0;
+    translate: 0 50%;
+  }
+}
+
+#alert-dialog::backdrop {
+  background: linear-gradient(#000d, #000a);
+  opacity: 1;
+  transition:
+    display 1s allow-discrete,
+    opacity 1s;
+
+  @starting-style { opacity: 0 }
+}
+
+#alert-dialog:not([open])::backdrop {
+  opacity: 0;
+}
+
+#form {
+  width: 250px;
+  margin: 0 auto;
+  height: 50px;
+}
+
+#form p {
+  text-align: center;
+}
+
+#form label.pp {
+  font-size: 20px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label.pp {
+  
+  color: grey;
+  font-size: 60px;
+}
+
+.clasificacion {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+label.pp:hover,
+label.pp:hover ~ label.pp {
+color: orangered;
+}
+
+input.pp[type="radio"]:checked ~ label.pp {
+  color: orangered;
+}
+
+
+
+dialog{
+  background: transparent;
+  border-color: orangered;
+
+  color: darkorange;
+  font-size: 26px;
+  font-family: red rose;
+  width: 50%;
+  height: 500px;
+}
+
+h1.iuy{
+	background: linear-gradient(black,orangered,orange);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
